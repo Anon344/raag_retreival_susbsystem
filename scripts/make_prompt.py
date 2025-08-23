@@ -112,7 +112,7 @@ def main():
         retrieved.append(m)
 
     # 4) Build prompt text
-    header = "You are a helpful assistant. Answer the following question. The following information is provided as a resource. Only respond with your final answer in one line: do not include anything else in the response.\n\n"
+    header = "You are a helpful assistant. Answer the following question. The following information is provided as a resource. Only respond with your final answer: do not include anything else in the response and do not provide options.\n\n"
     blocks = [header]
     for i, m in enumerate(retrieved):
         blocks.append(f"[DOC {i}]\n")
